@@ -1,0 +1,68 @@
+body {
+  background: #252525;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.header {
+  height: 70vh;
+  max-height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+.header .first-box {
+  position: absolute;
+  background-color: #d3d3d3;
+  width: 2000px;
+  height: 1500px;
+  transform: rotate(-45deg);
+  left: -500px;
+  top: -800px;
+  z-index: -3;
+}
+.header .second-box {
+  position: absolute;
+  background-color: #d3d3d3;
+  width: 2000px;
+  height: 1500px;
+  transform: rotate(-45deg);
+  left: 900px;
+  z-index: -1;
+  top: 500px;
+}
+.header img {
+  z-index: -2;
+  position: absolute;
+  height: 100%;
+  right: 20rem;
+}
+.header .container .row {
+  display: flex;
+  flex-direction: row;
+}
+.header .container .row .back-text {
+  z-index: -3;
+  font-size: 5rem;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 50%;
+  right: 5%;
+  opacity: 0.7;
+}
+.header .container .row > div {
+  width: 50%;
+}
+.header .container .row > div:first-child {
+  padding-top: 20vh;
+}
+
+.detail-information {
+  background-color: #a0a0a0;
+}
+.detail-information .content {
+  margin-bottom: 5vh;
+}
+.detail-information .content article {
+  text-align: justify;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,79 @@
+$font-color:#fff;
+$color-one:#d3d3d3;
+$color-two:#a0a0a0;
+$color-three:#8b8b8b;
+$banner-size:70vh;
+
+@use 'navbar';
+
+@mixin tilt-box(){
+    position: absolute;
+    background-color: $color-one;
+    width: 2000px;
+    height: 1500px;
+    transform: rotate(-45deg);
+    
+}
+body{
+    background: #252525;
+    overflow-x: hidden;
+    color:$font-color;
+}
+
+.header{
+    height: $banner-size;
+    max-height: $banner-size;
+    position: relative;
+    overflow: hidden;
+    
+    .first-box{
+        @include tilt-box;
+        left: -500px;
+        top:-800px;
+        z-index: -3;
+    }
+    .second-box{
+        @include tilt-box;
+        left: 900px;
+        z-index: -1;
+        top:500px;
+    }
+    img{
+        z-index: -2;
+        position: absolute;
+        height: 100%;
+        right: 20rem;
+    }
+    .container{
+        .row{
+            .back-text{
+                z-index: -3;
+                font-size: 5rem;
+                font-weight: bold;
+                transform: rotate(-90deg);
+                position: absolute;
+                bottom: 50%;
+                right: 5%;
+                opacity: 0.7;
+            }
+            >div{
+                width: 50%;
+            }
+            >div:first-child{
+                padding-top: 20vh;
+            }
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.detail-information{
+    background-color: $color-two;
+    .content{
+        margin-bottom: 5vh;
+        article{
+            text-align: justify;
+        }
+    }
+}
