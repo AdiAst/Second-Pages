@@ -7,6 +7,8 @@
                 <h1>I KADEK ADI ASTAWA</h1>
                 <h3>Junior Programmer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis officiis qui sit autem nisi quia deleniti cumque quod aperiam exercitationem suscipit ab officia adipisci, totam ducimus. Consequuntur repellat similique nihil?</p>
+                <button class="btn btn-outline-light">SEE MY RESUME</button>
+                <a href="youtube.com" class="btn btn-outline-light">VIDEO INTRODUCTION</a>
             </div>
             <div>
                 <img src="src/images/adi.png" alt="adi astawa">
@@ -15,7 +17,7 @@
         </div>
     </div>
 </div>
-<div class="detail-information py-5">
+<div class="detail-information">
     <div class="container py-5">
         <div class="row">
             <div class="col"></div>
@@ -41,7 +43,7 @@
                 
             </div>
         </div>
-        <div class="row">
+        <div class="row content-spacing">
             <div class="col"></div>
             <div class="col">
                 <div class="content">
@@ -52,25 +54,43 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <h2><span class="highlight-text">#</span> TECHNICAL SKILL</h2>
-            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <div class="row">
+            <div class="col">                
+                <div class="content content-spacing">
+                    <h2><span class="highlight-text">#</span> TECHNICAL SKILL</h2>
+                    <div id="chartContainer" style="height: 370px; width: 100%; "></div>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div class="card text-bg-dark rounded-0 border-0">
-        <img src="src/images/project-image.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
-            <h4>PROJECT LIST</h4>
-            <p class="w-50 text-center mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit laudantium aperiam tempora sapiente vel accusantium non aut debitis consequatur necessitatibus aspernatur blanditiis, architecto, ab soluta perspiciatis aliquid quae temporibus. Perferendis?</p>
-          <span class="btn btn-outline-light px-5 fw-bold" id="projects-link" onclick="$('#content').load('src/components/projects.html');">PROJECTS LIST</span>
+        <div class="row">
+            <div class="col">                
+                <div class="contact-form content-spacing">
+                    <h2><span class="highlight-text">#</span> CONTACT ME</h2>
+                    <form action="#" class="mt-4 ">
+                       <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="col">                    
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn px-5 float-end btn-outline-light">SEND</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="content">
-            
-        </div>
+        
     </div>
 
 </div>

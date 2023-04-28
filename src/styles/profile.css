@@ -1,0 +1,100 @@
+body {
+  background: #1A1A1A;
+  overflow-x: hidden;
+  color: #F7F7F7;
+}
+
+ul li span {
+  cursor: pointer;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #F7F7F7;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.highlight-text {
+  color: #93DEFF;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #666;
+}
+
+.header {
+  height: 80vh;
+  max-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+.header .first-box {
+  position: absolute;
+  background-color: #616571;
+  width: 2000px;
+  height: 1500px;
+  transform: rotate(-45deg);
+  left: -500px;
+  top: -800px;
+  z-index: -3;
+}
+.header .second-box {
+  position: absolute;
+  background-color: #616571;
+  width: 2000px;
+  height: 1500px;
+  transform: rotate(-45deg);
+  left: 900px;
+  z-index: -1;
+  top: 500px;
+}
+.header img {
+  z-index: -2;
+  position: absolute;
+  height: 100%;
+  right: 20rem;
+}
+.header .container .row {
+  display: flex;
+  flex-direction: row;
+}
+.header .container .row > div {
+  width: 50%;
+}
+.header .container .row > div:first-child {
+  padding-top: 20vh;
+}
+
+.detail-information {
+  margin-top: 20vh;
+  background-color: #1A1A1A;
+}
+.detail-information .content {
+  margin-bottom: 5vh;
+}
+.detail-information .content article {
+  text-align: justify;
+}
+.detail-information .content-spacing {
+  margin-bottom: 15vh;
+}
+
+.card .card-img-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+.card img {
+  max-height: 50vh;
+}
+
+.contact-form {
+  padding: 30px 50px;
+  box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=profile.css.map */
