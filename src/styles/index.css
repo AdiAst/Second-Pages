@@ -1,18 +1,44 @@
 body {
-  background: #252525;
+  background: #1A1A1A;
   overflow-x: hidden;
-  color: #fff;
+  color: #F7F7F7;
+}
+
+ul li span {
+  cursor: pointer;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #F7F7F7;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.highlight-text {
+  color: #93DEFF;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #666;
 }
 
 .header {
-  height: 70vh;
-  max-height: 70vh;
+  height: 80vh;
+  max-height: 80vh;
   position: relative;
   overflow: hidden;
 }
 .header .first-box {
   position: absolute;
-  background-color: #d3d3d3;
+  background-color: #616571;
   width: 2000px;
   height: 1500px;
   transform: rotate(-45deg);
@@ -22,7 +48,7 @@ body {
 }
 .header .second-box {
   position: absolute;
-  background-color: #d3d3d3;
+  background-color: #616571;
   width: 2000px;
   height: 1500px;
   transform: rotate(-45deg);
@@ -40,16 +66,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-.header .container .row .back-text {
-  z-index: -3;
-  font-size: 5rem;
-  font-weight: bold;
-  transform: rotate(-90deg);
-  position: absolute;
-  bottom: 50%;
-  right: 5%;
-  opacity: 0.7;
-}
 .header .container .row > div {
   width: 50%;
 }
@@ -58,11 +74,18 @@ body {
 }
 
 .detail-information {
-  background-color: #a0a0a0;
+  background-color: #1A1A1A;
 }
 .detail-information .content {
   margin-bottom: 5vh;
 }
 .detail-information .content article {
   text-align: justify;
+}
+
+.card .card-img-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+.card img {
+  max-height: 50vh;
 }/*# sourceMappingURL=index.css.map */
