@@ -1,0 +1,14 @@
+[
+    {
+        "PID":"P001",
+        "title":"Merry Meals",
+        "description":"I was responsible for integrating the back-end with the front-end in the Merry Meals program, which is a charitable organization that prepares and delivers hot, nutritious meals to adults who are unable to cook or maintain their nutritional status due to age, disease, or disability. The back-end was developed using Spring Boot and utilized a MySQL database, while the front-end was built using ReactJS, and my role was to ensure efficient communication between the website interface and the database.",
+        "technology":"Spring Boot, ReactJS, MySQL"
+    },
+    {
+        "PID":"P002",
+        "title":"School Tuition Payment",
+        "description":"The School Tuition Payment program is a web-based application that facilitates the payment process for school tuition fees. It utilizes the PHP programming language to connect the website interface to a secure MySQL database, allowing for seamless transactions between students and the school administration.",
+        "technology":"PHP, MySQL"
+    }
+]

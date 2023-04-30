@@ -82,4 +82,8 @@ ul li span {
 }
 .header-projects .container .row > div:first-child {
   padding-top: 20vh;
+}
+
+.card {
+  background-color: #616571;
 }/*# sourceMappingURL=project.css.map */

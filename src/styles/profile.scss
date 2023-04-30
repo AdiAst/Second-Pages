@@ -40,7 +40,6 @@
 }
 
 .detail-information{
-    margin-top: 20vh;
     background-color: $color-two;
     .content{
         margin-bottom: 5vh;
@@ -49,7 +48,7 @@
         }
     }
     .content-spacing{
-        margin-bottom:15vh ;
+        margin-bottom:20vh ;
     }
 }
 
@@ -78,4 +77,10 @@
     color:$color-three;
     border-color: $color-two;
     background-color: $color-two;
+}
+.highlight{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }

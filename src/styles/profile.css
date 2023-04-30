@@ -84,7 +84,6 @@ ul li span {
 }
 
 .detail-information {
-  margin-top: 20vh;
   background-color: #1A1A1A;
 }
 .detail-information .content {
@@ -94,7 +93,7 @@ ul li span {
   text-align: justify;
 }
 .detail-information .content-spacing {
-  margin-bottom: 15vh;
+  margin-bottom: 20vh;
 }
 
 .card .card-img-overlay {
@@ -123,4 +122,11 @@ ul li span {
   color: #93DEFF;
   border-color: #1A1A1A;
   background-color: #1A1A1A;
+}
+
+.highlight {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }/*# sourceMappingURL=profile.css.map */
