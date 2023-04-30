@@ -36,3 +36,20 @@ ul{
 .menu-link:focus {
 color: #666;
 }
+.blunt::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: $color-two;
+}
+@mixin tilt-box(){
+    position: absolute;
+    background-color: $color-one;
+    width: 2000px;
+    height: 1500px;
+    transform: rotate(-45deg);
+    
+}

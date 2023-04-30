@@ -28,4 +28,14 @@ ul li span {
 .menu-link:hover,
 .menu-link:focus {
   color: #666;
+}
+
+.blunt::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #1A1A1A;
 }/*# sourceMappingURL=index.css.map */

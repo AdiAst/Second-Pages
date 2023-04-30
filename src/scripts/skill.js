@@ -1,44 +1,34 @@
-window.onload = function () {
-
-    //Better to construct options first and then pass it as a parameter
-    var options = {
-        animationEnabled: true,
-        backgroundColor: "#8b8b8b00",
-        axisY: {
-            tickThickness: 0,
-            lineThickness: 0,
-            valueFormatString: " ",
-            includeZero: true,
-            gridThickness: 0                    
-        },
-        axisX: {
-            tickThickness: 0,
-            lineThickness: 0,
-            labelFontSize: 18,
-            labelFontColor: "black"				
-        },
-        data: [{
-            indexLabelFontSize: 14,
-            toolTipContent: "<span style=\"color:#000\">{indexLabel}:</span> <span style=\"color:#000\"><strong>{y}</strong></span>",
-            indexLabelPlacement: "inside",
-            indexLabelFontColor: "white",
-            indexLabelFontWeight: 600,
-            indexLabelFontFamily: "Verdana",
-            color: "#000",
-            type: "bar",
-            dataPoints: [
-                { y: 21, label: "21%", indexLabel: "Video" },
-                { y: 25, label: "25%", indexLabel: "Dining" },
-                { y: 33, label: "33%", indexLabel: "Entertainment" },
-                { y: 36, label: "36%", indexLabel: "News" },
-                { y: 42, label: "42%", indexLabel: "Music" },
-                { y: 49, label: "49%", indexLabel: "Social Networking" },
-                { y: 50, label: "50%", indexLabel: "Maps/ Search" },
-                { y: 55, label: "55%", indexLabel: "Weather" },
-                { y: 60, label: "60%", indexLabel: "Games" }
-            ]
-        }]
-    };
-    
-    $("#chartContainer").CanvasJSChart(options);
+$(document).ready(function() {
+    const bar = `
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    `
+    var skills = [
+      { name: "Bootstrap 5", expertise: 90 },
+      { name: "Spring Boot", expertise: 80 },
+      { name: "Laravel", expertise: 75 },
+      { name: "Sass", expertise: 80 },
+      { name: "PHP", expertise: 80 },
+      { name: "Java", expertise: 85 },
+      { name: "CSS", expertise: 85 },
+      { name: "HTML", expertise: 90 },
+      { name: "jQuery", expertise: 85 },
+      { name: "React", expertise: 85 },
+      { name: "MySQL", expertise: 90 },
+      { name: "Liferay", expertise: 80 }
+    ];
+  
+    for (var i = 0; i < skills.length; i++) {
+      var skill = skills[i];
+      var progress = `
+        <div class="progress bg-dark mb-3">
+          <div class="progress-bar " role="progressbar" aria-label="${skill.name} skill level" style="width: ${skill.expertise}%" aria-valuenow="${skill.expertise}" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      `;
+      var column = i < 6 ? "#left" : "#right";
+      $(column).append("<h5>" + skill.name + "</h5>");
+      $(column).append(progress);
     }
+  });
+  

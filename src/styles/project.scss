@@ -1,0 +1,39 @@
+@import 'index.scss';
+.header-projects{
+    height: calc($banner-size/2);
+    max-height: calc($banner-size/2);
+    position: relative;
+    overflow: hidden;
+    .eo-logo{
+        z-index: -2;
+        position: absolute;
+        right: 5%;
+        top: -10%;
+        opacity: 0.1;
+        
+    }
+    .first-box{
+        @include tilt-box;
+        left: -500px;
+        top:-800px;
+        z-index: -1;
+    }
+    .second-box{
+        @include tilt-box;
+        left: 900px;
+        z-index: -1;
+        top:500px;
+    }
+    .container{
+        .row{
+            >div{
+                width: 50%;
+            }
+            >div:first-child{
+                padding-top: 20vh;
+            }
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
