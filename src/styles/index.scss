@@ -24,6 +24,7 @@ body{
     background: $color-two;
     overflow-x: hidden;
     color:$font-color;
+    font-size: 16px;
 }
 ul{
     li{
@@ -36,16 +37,32 @@ ul{
     flex-direction: column;
     align-items: start;
     height: 100vh;
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+        color: $font-color;
+        font-weight: bold;
+        transition: 0.5s;
+        img{
+            margin-right: 10px;
+            width: 40px;
+        }
+    }
+    .navbar-brand:hover{
+        color: $color-three;
+    }
 }
 .menu-link {
-    
-    font-size: 1.2rem;
     font-weight: bold;
     color: $font-color;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    font-size: 1.2rem;
 }
+
+
+
 .highlight-text{
     color: $color-three;
 }  
@@ -53,15 +70,7 @@ ul{
 .menu-link:focus {
 color: $color-three;
 }
-// .blunt::after{
-//     content: '';
-//     width: 100px;
-//     height: 100px;
-//     left: 0;
-//     bottom: 0;
-//     position: absolute;
-//     background-color: $color-two;
-// }
+
 .text-primary{
     color: $color-three;
 }
@@ -97,4 +106,38 @@ color: $color-three;
     max-height: 100vh;
     scroll-behavior: smooth;
     min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .btn-outline-primary,.btn-primary{
+        font-size: 16px;
+    }
+    .navbar{
+        height: 10vh;
+    }
+    body{
+        font-size: 14px;
+    }
+    .spaceline-nav{
+
+        display: none;
+    }
+    .menu-link {
+        font-size: 1rem;
+    }
+    .navbar{
+        .navbar-brand{
+            display: none;
+        }
+        .navbar-nav{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .menu-link {
+        text-align: center;
+        font-size: 0.8rem;
+    }
 }

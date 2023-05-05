@@ -24,6 +24,7 @@ body {
   background: #1A1A1A;
   overflow-x: hidden;
   color: #F7F7F7;
+  font-size: 16px;
 }
 
 ul li span {
@@ -35,14 +36,28 @@ ul li span {
   align-items: start;
   height: 100vh;
 }
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #F7F7F7;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.navbar .navbar-brand img {
+  margin-right: 10px;
+  width: 40px;
+}
+.navbar .navbar-brand:hover {
+  color: #93DEFF;
+}
 
 .menu-link {
-  font-size: 1.2rem;
   font-weight: bold;
   color: #F7F7F7;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  font-size: 1.2rem;
 }
 
 .highlight-text {
@@ -94,4 +109,35 @@ ul li span {
   max-height: 100vh;
   scroll-behavior: smooth;
   min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .btn-outline-primary, .btn-primary {
+    font-size: 16px;
+  }
+  .navbar {
+    height: 10vh;
+  }
+  body {
+    font-size: 14px;
+  }
+  .spaceline-nav {
+    display: none;
+  }
+  .menu-link {
+    font-size: 1rem;
+  }
+  .navbar .navbar-brand {
+    display: none;
+  }
+  .navbar .navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 576px) {
+  .menu-link {
+    text-align: center;
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */
