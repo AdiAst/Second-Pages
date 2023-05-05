@@ -1,45 +1,3 @@
-body {
-  background: #1A1A1A;
-  overflow-x: hidden;
-  color: #F7F7F7;
-}
-
-ul li span {
-  cursor: pointer;
-}
-
-.menu-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #F7F7F7;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-.highlight-text {
-  color: #93DEFF;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: #666;
-}
-
-.blunt::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  background-color: #1A1A1A;
-}
-
 .header {
   height: 80vh;
   max-height: 80vh;
@@ -52,7 +10,7 @@ ul li span {
   width: 2000px;
   height: 1500px;
   transform: rotate(-45deg);
-  left: -500px;
+  left: -30vw;
   top: -800px;
   z-index: -3;
 }
@@ -62,7 +20,7 @@ ul li span {
   width: 2000px;
   height: 1500px;
   transform: rotate(-45deg);
-  left: 900px;
+  left: 50%;
   z-index: -1;
   top: 500px;
 }
@@ -70,7 +28,7 @@ ul li span {
   z-index: -2;
   position: absolute;
   height: 100%;
-  right: 20rem;
+  right: 10vw;
 }
 .header .container .row {
   display: flex;
@@ -110,18 +68,6 @@ ul li span {
 
 .progress-bar {
   background-color: #93DEFF;
-}
-
-.btn-outline-primary {
-  color: #F7F7F7;
-  border-color: #F7F7F7;
-  font-weight: 600;
-}
-
-.btn-outline-primary:hover {
-  color: #93DEFF;
-  border-color: #1A1A1A;
-  background-color: #1A1A1A;
 }
 
 .highlight {

@@ -16,6 +16,7 @@ $(document).ready(function() {
       { name: "jQuery", expertise: 85 },
       { name: "React", expertise: 85 },
       { name: "MySQL", expertise: 90 },
+      { name: "Javascript", expertise: 90 },
       { name: "Liferay", expertise: 80 }
     ];
   
@@ -26,7 +27,7 @@ $(document).ready(function() {
           <div class="progress-bar " role="progressbar" aria-label="${skill.name} skill level" style="width: ${skill.expertise}%" aria-valuenow="${skill.expertise}" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       `;
-      var column = i < 6 ? "#left" : "#right";
+      var column = i < 7 ? "#left" : "#right";
       $(column).append("<h5>" + skill.name + "</h5>");
       $(column).append(progress);
     }

@@ -1,4 +1,4 @@
-@import 'index.scss';
+@import 'base.scss';
 
 
 .header{
@@ -9,13 +9,13 @@
     
     .first-box{
         @include tilt-box;
-        left: -500px;
+        left: -30vw;
         top:-800px;
         z-index: -3;
     }
     .second-box{
         @include tilt-box;
-        left: 900px;
+        left: 50%;
         z-index: -1;
         top:500px;
     }
@@ -23,7 +23,7 @@
         z-index: -2;
         position: absolute;
         height: 100%;
-        right: 20rem;
+        right: 10vw;
     }
     .container{
         .row{
@@ -68,16 +68,7 @@
 .progress-bar{
     background-color: $color-three;
 }
-.btn-outline-primary{
-    color:$font-color;
-    border-color: $font-color;
-    font-weight: 600;
-}
-.btn-outline-primary:hover{
-    color:$color-three;
-    border-color: $color-two;
-    background-color: $color-two;
-}
+
 .highlight{
     display: flex;
     justify-content: center;

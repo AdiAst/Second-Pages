@@ -1,89 +1,11 @@
-body {
-  background: #1A1A1A;
-  overflow-x: hidden;
-  color: #F7F7F7;
-}
-
-ul li span {
-  cursor: pointer;
-}
-
-.menu-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #F7F7F7;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-.highlight-text {
-  color: #93DEFF;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: #666;
-}
-
-.blunt::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  background-color: #1A1A1A;
-}
-
-.header-projects {
-  height: 40vh;
-  max-height: 40vh;
-  position: relative;
-  overflow: hidden;
-}
-.header-projects .eo-logo {
-  z-index: -2;
-  position: absolute;
-  right: 5%;
-  top: -10%;
-  opacity: 0.1;
-}
-.header-projects .first-box {
-  position: absolute;
-  background-color: #616571;
-  width: 2000px;
-  height: 1500px;
-  transform: rotate(-45deg);
-  left: -500px;
-  top: -800px;
-  z-index: -1;
-}
-.header-projects .second-box {
-  position: absolute;
-  background-color: #616571;
-  width: 2000px;
-  height: 1500px;
-  transform: rotate(-45deg);
-  left: 900px;
-  z-index: -1;
-  top: 500px;
-}
-.header-projects .container .row {
-  display: flex;
-  flex-direction: row;
-}
-.header-projects .container .row > div {
-  width: 50%;
-}
-.header-projects .container .row > div:first-child {
-  padding-top: 20vh;
-}
-
 .card {
   background-color: #616571;
+}
+
+.modal-dialog {
+  max-width: 90vw;
+}
+
+.modal-header {
+  border-bottom: #93DEFF 1px solid;
 }/*# sourceMappingURL=project.css.map */

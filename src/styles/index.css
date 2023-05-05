@@ -1,3 +1,25 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #616571;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #93DEFF;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #93DEFF;
+  background: #1A1A1A;
+}
+
+::selection {
+  color: #93DEFF;
+  background: #1A1A1A;
+}
+
 body {
   background: #1A1A1A;
   overflow-x: hidden;
@@ -8,11 +30,13 @@ ul li span {
   cursor: pointer;
 }
 
+.navbar {
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+}
+
 .menu-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 2rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #F7F7F7;
@@ -27,15 +51,47 @@ ul li span {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #666;
+  color: #93DEFF;
 }
 
-.blunt::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  left: 0;
-  bottom: 0;
-  position: absolute;
+.text-primary {
+  color: #93DEFF;
+}
+
+.btn-outline-primary {
+  color: #F7F7F7;
+  border-color: #F7F7F7;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  color: #93DEFF;
+  border-color: #1A1A1A;
   background-color: #1A1A1A;
+}
+
+.btn-primary {
+  background-color: #93DEFF;
+  border: none;
+  color: #1A1A1A;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  color: #93DEFF;
+  background-color: #616571;
+  border-color: #1A1A1A;
+  background-color: #1A1A1A;
+}
+
+.border-primary {
+  border-color: #93DEFF !important;
+  opacity: 1;
+}
+
+.web-content {
+  overflow-y: auto;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+  min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */

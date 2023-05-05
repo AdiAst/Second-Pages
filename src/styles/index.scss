@@ -1,10 +1,25 @@
-$font-color:#F7F7F7;
-$color-one:#616571;
-$color-two:#1A1A1A;
-$color-three:#93DEFF;
-$banner-size:80vh;
+@import 'base.scss';
 
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+background: $color-one; 
+}
+
+::-webkit-scrollbar-thumb {
+background: $color-three; 
+}
+::-moz-selection { /* Code for Firefox */
+    color: $color-three;
+    background: $color-two;
+}
+
+::selection {
+color: $color-three;
+background: $color-two;
+}
 body{
     background: $color-two;
     overflow-x: hidden;
@@ -17,11 +32,13 @@ ul{
         }
     }
 }
+.navbar{
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+}
 .menu-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 2rem;
+    
     font-size: 1.2rem;
     font-weight: bold;
     color: $font-color;
@@ -34,22 +51,50 @@ ul{
 }  
 .menu-link:hover,
 .menu-link:focus {
-color: #666;
+color: $color-three;
 }
-.blunt::after{
-    content: '';
-    width: 100px;
-    height: 100px;
-    left: 0;
-    bottom: 0;
-    position: absolute;
+// .blunt::after{
+//     content: '';
+//     width: 100px;
+//     height: 100px;
+//     left: 0;
+//     bottom: 0;
+//     position: absolute;
+//     background-color: $color-two;
+// }
+.text-primary{
+    color: $color-three;
+}
+
+.btn-outline-primary{
+    color:$font-color;
+    border-color: $font-color;
+    font-weight: 600;
+}
+.btn-outline-primary:hover{
+    color:$color-three;
+    border-color: $color-two;
     background-color: $color-two;
 }
-@mixin tilt-box(){
-    position: absolute;
-    background-color: $color-one;
-    width: 2000px;
-    height: 1500px;
-    transform: rotate(-45deg);
-    
+.btn-primary{
+    background-color: $color-three;
+    border: none;
+    color:$color-two;
+    font-weight: 600;
+}
+.btn-primary:hover{
+    color:$color-three;
+    background-color: #616571;
+    border-color: $color-two;
+    background-color: $color-two;
+}
+.border-primary{
+    border-color: $color-three!important;
+    opacity: 1;
+}
+.web-content{
+    overflow-y: auto;
+    max-height: 100vh;
+    scroll-behavior: smooth;
+    min-height: 100vh;
 }
